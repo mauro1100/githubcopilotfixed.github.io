@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gamer's Product Listing</title>
+    <style>
+        body {
+            background-color: #282a36;
+            color: #f8f8f2;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #44475a;
+        }
+        .header button {
+            background-color: #50fa7b;
+            border: none;
+            color: #282a36;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .product {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #44475a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        form input[type=text] {
+            width: 200px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button onclick="alert('Home')">Home</button>
+        <button onclick="alert('Product')">Product</button>
+    </div>
+    <div class="product">
+        <div>
+            <img src="https://via.placeholder.com/200" alt="Product Image">
+            <p>Product Description</p>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/200" alt="Product Image">
+            <p>Product Description</p>
+        </div>
+    </div>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Your last name..">
+    </form>
+    <div class="footer">
+        <p>Copyright &copy; 2022</p>
+    </div>
+</body>
+</html>
